@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="fade-in">
+        <div class="nav-content">
+            <div id="logo">
+                <a href="/" id="ml"><img src="/images/egaze.png"></a>
+            </div>
+            <div class="p-label-m" id="navo">
+                <ul id="center">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/guidelines">Guidelines</a></li>
+                    <li><a class="active" href="/faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div id="container">
+                <a class="btn" href="/discord">JOIN US<span class="arrow">&gt;</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="guidelines-section">
+        <h1>FREQUENTLY ASKED QUESTIONS
+        </h1>
+        <button class="accordion">What is <span> egaze </span> about?</button>
+        <div class="panel">
+            <p><span>egaze</span> is about creating a great and welcoming place for the people who join our server.</p>
+        </div>
+
+        <button class="accordion">Why did we choose the name <span>egaze</span>?</button>
+        <div class="panel">
+            <p>It's a long story. <span>egaze</span> was inherited from Eclipse and Stargaze. Eclipse and Stargaze are previous servers of the owner, which we decided to remake stargaze, but then the vanity was not available so we ultimately decided on gaze, but since we had a previous server called Eclipse, which was a network server we decided to merge the Eclipse server and the Stargaze server which ultimately became <span>egaze</span>. It's really a long story, but either way <span>egaze</span> is a completely original name. Some say <span>egaze</span> is like looking at something on the internet, but that's just how they describe it!</p>
+        </div>
+
+        <button class="accordion">What are some topics I’m allowed to talk about?</button>
+        <div class="panel">
+            <p>You can talk about anything here, unless it violates our <a href="/guidelines">Guidelines</a>.</p>
+        </div>
+        <button class="accordion">Can I post art here?</button>
+        <div class="panel">
+            <p>Yes, you are allowed to post art here. But make sure to use the correct channels to do that!</p>
+        </div>
+        <div class="important">
+            <p>If you have any more questions for us, open a ticket or ask in the txt channel!</p>
+        </div>
+    </div>
+
+    <footer class="fade-in">
+        <div class="ftcontents">
+            <div class="copyright">
+                <span class="p-overline-s">
+                    <a href="/">© EGAZE 2024. ALL RIGHTS RESERVED.</a>
+                </span>
+            </div>
+            <div class="socials">
+                <a href="/discord" title="Join Us Today!"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

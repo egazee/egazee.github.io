@@ -1,0 +1,435 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+:root {
+    --fontWeightBold: 700;
+    --fontWeightSemiBold: 600;
+    --fontWeightMedium: 500;
+    --fontWeightRegular: 400;
+    --primaryColor: #600575;
+    --secondaryColor: #ce72e2;
+    --backgroundColor: #282828;
+    --accentColor: #d3beee;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+    font-family: 'ABC Ginto Nord Condensed Unlicensed Trial', sans-serif;
+    font-family: 'ABC Ginto Normal Unlicensed Trial', sans-serif;
+    margin: 0;
+    text-decoration: none;
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #d4be98;
+}
+
+::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: var(--fontWeightSemiBold);
+    letter-spacing: -.02em;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 4.8125rem;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 3.625rem;
+}
+
+h3 {
+    font-size: 2.5em;
+    line-height: 3rem;
+}
+
+h4,.p-page-title {
+    font-size: 2.25em;
+    line-height: 2.75rem;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 2em;
+    line-height: 1.8125rem;
+}
+
+h6 {
+    font-size: 1.5em;
+    line-height: 2.45rem;
+}
+
+p {
+    line-height: 1.25rem;
+}
+
+.p-subtitle {
+    margin-top: -.1em;
+    color: var(--grey1);
+}
+
+.p-display {
+    font-size: 6em;
+    font-weight: var(--fontWeightBold);
+    letter-spacing: -.02em;
+    line-height: 7.25rem;
+}
+
+.p-xs {
+    font-size: .75em;
+}
+
+.p-s {
+    font-size: .875em;
+    line-height: 1rem;
+}
+
+.p-l {
+    font-size: 1.25em;
+}
+
+.p-label-xs {
+    font-size: .75em;
+    font-weight: var(--fontWeightSemiBold);
+}
+
+.p-label-s {
+    font-size: .875em;
+    font-weight: var(--fontWeightSemiBold);
+    letter-spacing: .02rem;
+    line-height: 1rem;
+}
+
+.p-label-m {
+    font-size: 1em;
+    font-weight: var(--fontWeightSemiBold);
+    letter-spacing: .02rem;
+}
+
+.p-label-l {
+    font-size: 1.25em;
+    font-weight: var(--fontWeightSemiBold);
+    letter-spacing: .02rem;
+}
+
+.p-overline-s {
+    font-size: .75em;
+    font-weight: var(--fontWeightSemiBold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+}
+
+.p-overline-m {
+    font-size: .875em;
+    font-weight: var(--fontWeightSemiBold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+}
+
+.p-overline-l {
+    font-size: 1.25em;
+    font-weight: var(--fontWeightSemiBold);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+}
+
+/* START NAV */
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1d2021;
+    position: sticky;
+    top: 5;
+    z-index: 999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+#logo {
+    position:relative;
+}
+
+#logo a {
+        text-decoration: none;
+        text-align: center;
+        padding: .5em;
+        transition: .15s ease;
+        transition-property: color, text-decoration;
+    }
+
+#logo img {
+        vertical-align: middle;
+        border-style: none;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 50px;
+    }
+
+#navo ul {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0;
+        display: block;
+        list-style-type: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+        font-family: 'Montserrat';
+    }
+
+    .p-label-m {
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: .02rem;
+    }
+
+#navo li {
+    float: left;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+#navo a {
+    text-decoration: none;
+    text-align: center;
+    padding: .5em;
+    color: #ce72e2;
+    display: inline-block;
+    position: relative;
+}
+
+#navo a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #600575;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+#navo a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#navo a:hover {
+    color: #005175;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    text-decoration: none;
+    font-family: 'ABC Ginto Nord Condensed Unlicensed Trial', sans-serif;
+    background: #005175;
+    background-size: 300% 300%;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.6rem; /* Adjusted padding to make the button smaller */
+    font-size: 1rem; /* Adjusted font-size to make the button smaller */
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+    background: linear-gradient(45deg, #8414B7, #00334C, #600575, #005175);
+    background-size: 300% 300%;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem; /* Adjusted padding to make the button smaller */
+    font-size: 1rem; /* Adjusted font-size to make the button smaller */
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 3s ease infinite; /* Apply animation constantly */
+}
+
+.btn .arrow {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.5s ease;
+}
+
+.btn:hover .arrow {
+    transform: translateX(10px);
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* END NAV */
+/* START FOOTER */
+
+footer {
+    margin-top: auto;
+    background-color: #1d2021;
+    padding: 1rem;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.ftcontents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.copyright {
+    display: flex;
+    font-weight: 300;
+    filter: brightness(80%);
+    font-size: 90%;
+    margin-right: 1em;
+}
+
+.copyright a {
+    color: #ae86d3;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+}
+
+.socials a {
+    color: #9a98d4;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ae86d3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* END FOOTER */
+
+
+/* END FOOTER */
+.footer p {
+    margin: 5px 0;
+}
+
+.guidelines-section {
+    padding: 50px 10%;
+    color: #e6e4eaba;
+    text-align: center;
+}
+
+.guideline {
+    margin-top: 30px;
+    background-color: #3c3836;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.guideline h2 {
+    margin-top: 0;
+    color: #ce72e2;
+}
+
+.guideline p {
+    margin: 0;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.gradient {
+    font-family: 'Pacifico', sans-serif;
+    height: 6rem;
+    background-image: linear-gradient(45deg, #8414B7, #00334C, #600575, #005175);
+    background-size: 300% 300%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradientAnimation 3s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.guidelines-content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.guideline h2 {
+        font-weight: 600;
+        font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+        text-decoration: none;
+        background: #8414B7;
+    background: linear-gradient(to right, #8414B7 0%, #005175 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.guideline h2 a:hover {
+    color: #fff;
+    text-decoration: underline;
+    background: #8314b78e;
+background: linear-gradient(to right, #ae9fb5fe 0%, #7c8c92 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
